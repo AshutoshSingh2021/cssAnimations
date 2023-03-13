@@ -1,0 +1,40 @@
+body {
+  background: lightblue;
+  text-align: center;
+}
+
+/* Transform Property */
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+img {
+  /* transform: rotateZ(-90deg) translate(100px, 200px) scale(2); */
+
+  /* transform: scale(2); */
+  /* transform: translate(-200px, 100px); */
+}
+
+/* Transition Property */
+
+.circle {
+  width: 100px;
+  padding: 50px 0;
+  line-height: 0;
+  margin: 60px auto;
+  background: pink;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  /* transition: 1s; */
+  transition: background 1s, transform 1s 0.3s ease-in-out;
+}
+
+.circle:hover {
+  background: salmon;
+  transform: rotate(360deg);
+}
